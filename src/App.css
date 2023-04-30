@@ -1,0 +1,22 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+button {
+  width: 150px;
+  height: 150px;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: aqua;
+}
