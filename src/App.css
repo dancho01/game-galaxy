@@ -1,22 +1,37 @@
-.parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  margin: 0;
 }
 
-.row {
-  display: flex;
+.App-header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: #eeeeee;
 }
 
-button {
-  width: 150px;
-  height: 150px;
+.App-logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
 }
 
-.green {
-  background-color: green;
+.navigation {
+  position: absolute;
+  right: 10px;
+  font-size: 15pt;
 }
 
-.blue {
-  background-color: aqua;
+.App-footer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #999999;
+}
+
+.main-body {
+  padding-top: 100px;
 }
