@@ -5,7 +5,6 @@ function Home ({ fetchCall }) {
 
   const [update, setUpdate] = React.useState(false);
 
-
   async function resetCounter () {
     await fetchCall();
     setUpdate(!update);

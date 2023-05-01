@@ -17,6 +17,7 @@ function App() {
 
   const [viewport, setViewport] = React.useState(window.innerWidth);
 
+  // window resizing
   React.useEffect(() => {
     function handleResize() {
       setViewport(window.innerWidth);
@@ -27,6 +28,7 @@ function App() {
     };
   }, []);
 
+  // fetch call
   async function fetchValue () {
     try {
       const res = await fetch('https://cgi.cse.unsw.edu.au/~cs6080/raw/data/info.json');
@@ -72,9 +74,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      
       <footer className='App-footer'></footer>
-
     </div>
   );
 }

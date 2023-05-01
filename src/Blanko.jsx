@@ -8,12 +8,14 @@ function Blanko () {
   const [correctAnswer, setCorrectAnswer] = React.useState(initial);
   const [indices, setIndices] = React.useState([]);
 
+  // get random str
   function getRandomItem() {
     const randomIndex = Math.floor(Math.random() * strs.length);
     const item = strs[randomIndex];
     return item;
   }
 
+  // randomly choose nonspace characters and replace with input fields
   function setNewString() {
     const rndStr = getRandomItem();
     const answer = [...rndStr];
@@ -36,10 +38,12 @@ function Blanko () {
     setContainer(str);
   }
 
+  // when page first loads, must find random string
   React.useEffect(() => {
     setNewString();
   }, [])
 
+  // update the list whenever the inputfields are changed and check if correct
   function updateContainer (value, index) {
     let newContainer = [...container];
     newContainer[index] = String(value);
@@ -74,7 +78,7 @@ function Blanko () {
           )
         }
         )}
-      </div> <br></br>
+      </div> <br />
       <button onClick={setNewString} >RESET</button>
     </div>
   );

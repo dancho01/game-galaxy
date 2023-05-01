@@ -17,6 +17,7 @@ export default function Slido () {
   const [solved, setSolved] = React.useState(false);
   const [hasMoved, setHasMoved] = React.useState(false);
 
+  // randomise the squares
   function randomiseSquares () {
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, ''];
 
@@ -44,7 +45,7 @@ export default function Slido () {
     randomiseSquares();
   }, []);
 
-
+  // depending on the value, returns corresponding shrek image
   function returnImage (row) {
     switch (row) {
       case 1:
@@ -66,6 +67,7 @@ export default function Slido () {
     }
   }
 
+  // checks win condition and if so, restart the game
   function checkWinCondition (newBoard) {
     setHasMoved(true);
     let match = true;
@@ -84,7 +86,7 @@ export default function Slido () {
     }
   }
 
-
+  // moves the tiles
   function move (y, x) {
     let newBoard = [...board];
     if (y - 1 >= 0 && newBoard[y - 1][x] === '') {
@@ -127,6 +129,7 @@ export default function Slido () {
     setSolved(true);
   }
 
+  // for key pressing
   function handleKeyPress (event) {
     console.log(event.key);
     let x = 0;
