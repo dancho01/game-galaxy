@@ -1,8 +1,8 @@
 import './Home.css';
 import React from 'react';
-import {strs} from './data/blanko.js';
+import {strs} from './data/countryList.js';
 
-function Blanko () {
+function Guess () {
   const initial = ['', '', '', '', '', '', '', '', '', '', '', ''];
   const [container, setContainer] = React.useState(initial);
   const [correctAnswer, setCorrectAnswer] = React.useState(initial);
@@ -79,9 +79,9 @@ function Blanko () {
         }
         )}
       </div> <br />
-      <button onClick={setNewString} >RESET</button>
+      <button onClick={setNewString} >Reset</button>
     </div>
   );
 }
 
-export default Blanko;
+export default Guess;

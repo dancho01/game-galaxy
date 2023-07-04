@@ -1,17 +1,29 @@
 body {
   margin: 0;
+  background-color: #cc99ff;
 }
 
 .App-header {
   height: 80px;
   width: 100%;
   position: fixed;
-  background-color: #eeeeee;
+  background-color: #ffccff;
 }
 
 .App-logo {
   position: absolute;
   left: 0px;
+  top: 0px;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  color: darkblue;
+}
+
+.logo {
+  font-size: 25pt;
+  position: absolute;
+  left: 180px;
   top: 0px;
   margin: 15px;
   width: 50px;
@@ -22,6 +34,7 @@ body {
   position: absolute;
   right: 10px;
   font-size: 15pt;
+  margin: 15px; 
 }
 
 .App-footer {
@@ -29,7 +42,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: #999999;
+  background-color: #000066;
 }
 
 .main-body {

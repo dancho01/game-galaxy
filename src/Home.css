@@ -1,5 +1,5 @@
-.red-text {
-  color: red;
+.blue-text {
+  color: black;
   font-size: 2em;
 }
 
@@ -51,4 +51,22 @@
 
 .buttons {
   text-align: center;
+}
+
+.score-text {
+  font-size: 1.2em;
+}
+
+.tic-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tic-row {
+  display: flex;
+}
+
+.winner {
+  background-color: aquamarine;
 }

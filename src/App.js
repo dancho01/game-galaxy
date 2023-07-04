@@ -1,5 +1,4 @@
 import './App.css';
-import logo from './assets/logo.png';
 import React from 'react';
 import {
   BrowserRouter,
@@ -9,8 +8,8 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import Slido from './Slido';
-import Tetro from './Tetro';
-import Blanko from './Blanko';
+import TicTacToe from './TicTacToe';
+import Guess from './Guess';
 
 
 function App() {
@@ -31,10 +30,7 @@ function App() {
   // fetch call
   async function fetchValue () {
     try {
-      const res = await fetch('https://cgi.cse.unsw.edu.au/~cs6080/raw/data/info.json');
-      const data = await res.json();
-      console.log(data.score);
-      localStorage.setItem('games-won', data.score);
+      localStorage.setItem('games-won', 0);
     } catch (error) {
       console.log(error);
     }
@@ -49,18 +45,19 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <header className='App-header'>
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-logo">GameGalaxy</h1>
+          <span className="logo">🪐</span>
           <span className='navigation'>
             {viewport > 800 ? ( <> 
             <Link to="/">Home</Link>&nbsp;|&nbsp;
-            <Link to="/blanko">Blanko</Link>&nbsp;|&nbsp;
-            <Link to="/slido">Slido</Link>&nbsp;|&nbsp;
-            <Link to="/tetro">Tetro</Link>
+            <Link to="/tictactoe">TicTacToe</Link>&nbsp;|&nbsp;
+            <Link to="/guess">GuessTheCountry</Link>&nbsp;|&nbsp;
+            <Link to="/slido">Slider</Link>
             </> ) : (<>
             <Link to="/">H</Link>&nbsp;|&nbsp;
-            <Link to="/blanko">B</Link>&nbsp;|&nbsp;
-            <Link to="/slido">S</Link>&nbsp;|&nbsp;
-            <Link to="/tetro">T</Link>
+            <Link to="/tictactoe">T</Link>&nbsp;|&nbsp;
+            <Link to="/guess">G</Link>&nbsp;|&nbsp;
+            <Link to="/slido">S</Link>
             </>)
             }
           </span>
@@ -68,9 +65,9 @@ function App() {
         <div className='main-body'>
           <Routes>
             <Route path="/" element={<Home fetchCall={fetchValue} />} />
-            <Route path="/blanko" element={<Blanko />} />
+            <Route path="/guess" element={<Guess />} />
             <Route path="/slido" element={<Slido/>} />
-            <Route path="/tetro" element={<Tetro />} />
+            <Route path="/tictactoe" element={<TicTacToe />} />
           </Routes>
         </div>
       </BrowserRouter>

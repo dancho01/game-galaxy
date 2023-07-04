@@ -12,8 +12,9 @@ function Home ({ fetchCall }) {
 
   return (
     <div className='body-text'>
-      <span className="red-text" >Please choose an option from the navbar.</span> <br></br>
-      <span>Games won: {localStorage.getItem('games-won')}</span> <span onClick={resetCounter} className='reset-button' >(reset)</span>
+      <span className="blue-text" >Pick a game of your choice.</span> <br></br>
+      <span className='score-text'>Games won: {localStorage.getItem('games-won')}</span> &nbsp;
+      <button onClick={resetCounter} className='reset-button' >Reset Score</button>
     </div>
   );
 }
