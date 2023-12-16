@@ -8,13 +8,13 @@ export default function TicTacToe () {
                           [ '', '', ''], 
                         ];
 
-  const [board, setBoard] = React.useState(initialBoard);
+  const[board, setBoard] = React.useState(initialBoard);
   const[turn, setTurn] = React.useState('X');
   const[winningTiles, setWinningTiles] = React.useState([]);
   const[winner, setWinner] = React.useState('');
 
   function changeTurns(y, x) {
-    if (board[y][x] === '') {
+    if (winner === '' && board[y][x] === '') {
       console.log(y)
       let newBoard = board;
       newBoard[y][x] = turn;
@@ -66,6 +66,13 @@ export default function TicTacToe () {
     })
     return win ? 'winner' : ''
   }
+
+  function resetGame() {
+    setBoard(initialBoard);
+    setWinner('');
+    setWinningTiles([]);
+    setTurn('X');
+  }
   
   return (
     <div className='tic-parent'>
@@ -73,12 +80,13 @@ export default function TicTacToe () {
         return (
           <div className='tic-row'>
             {row.map((val, x) => {
-              return <button style={{height: 120, width: 120}} className={checkTile(y,x)} onClick={() => changeTurns(y,x)}>{val}</button>
+              return <button style={{height: 120, width: 120, fontSize: 25}} className={checkTile(y,x)} onClick={() => changeTurns(y,x)}>{val}</button>
             })}
           </div>
         );
       })} <br />
-      {winner && <div style={{fontSize: 25}}>The winner is: {winner}</div> }
+      {winner && <div style={{fontSize: 25, color: '#61dafb'}}>The winner is: {winner}</div> } <br />
+      <button style={{width: 75}} onClick={() => resetGame()}>Reset</button>
     </div>
   )
  

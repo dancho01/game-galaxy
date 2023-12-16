@@ -49,12 +49,12 @@ function App() {
           <span className="logo">🪐</span>
           <span className='navigation'>
             {viewport > 800 ? ( <> 
-            <Link to="/">Home</Link>&nbsp;|&nbsp;
+            <Link to="/game-galaxy">Home</Link>&nbsp;|&nbsp;
             <Link to="/tictactoe">TicTacToe</Link>&nbsp;|&nbsp;
             <Link to="/guess">GuessTheCountry</Link>&nbsp;|&nbsp;
             <Link to="/slido">Slider</Link>
             </> ) : (<>
-            <Link to="/">H</Link>&nbsp;|&nbsp;
+            <Link to="/game-galaxy">H</Link>&nbsp;|&nbsp;
             <Link to="/tictactoe">T</Link>&nbsp;|&nbsp;
             <Link to="/guess">G</Link>&nbsp;|&nbsp;
             <Link to="/slido">S</Link>
@@ -64,7 +64,7 @@ function App() {
         </header>
         <div className='main-body'>
           <Routes>
-            <Route path="/" element={<Home fetchCall={fetchValue} />} />
+            <Route path="/game-galaxy" element={<Home fetchCall={fetchValue} />} />
             <Route path="/guess" element={<Guess />} />
             <Route path="/slido" element={<Slido/>} />
             <Route path="/tictactoe" element={<TicTacToe />} />

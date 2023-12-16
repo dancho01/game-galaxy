@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: #cc99ff;
+  background-image: url(https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg);
+  background-size: cover;
 }
 
 .App-header {
