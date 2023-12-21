@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .container { 
@@ -14,6 +16,7 @@
     border: 3px solid lightcoral;
     padding: 30px;
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 

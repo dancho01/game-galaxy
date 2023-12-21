@@ -80,7 +80,7 @@ export default function TicTacToe () {
         return (
           <div className='tic-row'>
             {row.map((val, x) => {
-              return <button style={{height: 120, width: 120, fontSize: 25}} className={checkTile(y,x)} onClick={() => changeTurns(y,x)}>{val}</button>
+              return <button style={{height: 130, width: 130, fontSize: 25}} className={checkTile(y,x)} onClick={() => changeTurns(y,x)}>{val}</button>
             })}
           </div>
         );

@@ -4,13 +4,13 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from 'react-router-dom';
 import Home from './Home';
 import Slido from './Slido';
 import TicTacToe from './TicTacToe';
 import Guess from './Guess';
 import CatFacts from './CatFacts';
+import Navbar from './Navbar';
 
 
 function App() {
@@ -41,11 +41,12 @@ function App() {
     fetchValue();
   }, [])
 
-
   return (
-    <div className='App'>
+    <>
       <BrowserRouter>
-        <header className='App-header'>
+      <Navbar />
+       {/*
+          <header className='App-header'>
           <h1 className="App-logo">GameGalaxy</h1>
           <span className="logo">🪐</span>
           <span className='navigation'>
@@ -77,18 +78,16 @@ function App() {
             }
           </span>
         </header>
-        <div className='main-body'>
-          <Routes>
-            <Route path="/game-galaxy" element={<Home fetchCall={fetchValue} />} />
-            <Route path="/guess" element={<Guess />} />
-            <Route path="/slido" element={<Slido/>} />
-            <Route path="/tictactoe" element={<TicTacToe />} />
-            <Route path='/catfacts' element={<CatFacts />} />
-          </Routes>
-        </div>
+       */}
+        <Routes>
+          <Route path="/game-galaxy" element={<Home fetchCall={fetchValue} />} />
+          <Route path="/guess" element={<Guess />} />
+          <Route path="/slido" element={<Slido/>} />
+          <Route path="/tictactoe" element={<TicTacToe />} />
+          <Route path='/catfacts' element={<CatFacts />} />
+        </Routes>
       </BrowserRouter>
-      <footer className='App-footer'></footer>
-    </div>
+      </>
   );
 }
 

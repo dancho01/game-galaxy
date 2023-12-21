@@ -1,0 +1,33 @@
+nav {
+    background-color: #816ad3;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    font-size: 15pt;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #06142c; /* Change color on hover, you can use your preferred color */
+  }
+
+  .App-logo {
+    position: absolute;
+    color: darkblue;
+  }
+  
