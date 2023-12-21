@@ -10,6 +10,7 @@ import Home from './Home';
 import Slido from './Slido';
 import TicTacToe from './TicTacToe';
 import Guess from './Guess';
+import CatFacts from './CatFacts';
 
 
 function App() {
@@ -49,15 +50,29 @@ function App() {
           <span className="logo">🪐</span>
           <span className='navigation'>
             {viewport > 800 ? ( <> 
-            <Link to="/game-galaxy">Home</Link>&nbsp;|&nbsp;
-            <Link to="/tictactoe">TicTacToe</Link>&nbsp;|&nbsp;
-            <Link to="/guess">GuessTheCountry</Link>&nbsp;|&nbsp;
-            <Link to="/slido">Slider</Link>
+            <ul>
+              <li>
+                <Link to="/game-galaxy">Home</Link>
+              </li>
+              <li>
+                <Link to="/tictactoe">TicTacToe</Link>
+              </li>
+              <li>
+                <Link to="/guess">GuessTheCountry</Link>
+              </li>
+              <li>
+                <Link to="/slido">Slider</Link>
+              </li>
+              <li>
+                <Link to="/catfacts">CatFacts</Link>
+              </li>
+            </ul>                     
             </> ) : (<>
             <Link to="/game-galaxy">H</Link>&nbsp;|&nbsp;
             <Link to="/tictactoe">T</Link>&nbsp;|&nbsp;
             <Link to="/guess">G</Link>&nbsp;|&nbsp;
-            <Link to="/slido">S</Link>
+            <Link to="/slido">S</Link>&nbsp;|&nbsp;
+            <Link to="/catfacts">C</Link>
             </>)
             }
           </span>
@@ -68,6 +83,7 @@ function App() {
             <Route path="/guess" element={<Guess />} />
             <Route path="/slido" element={<Slido/>} />
             <Route path="/tictactoe" element={<TicTacToe />} />
+            <Route path='/catfacts' element={<CatFacts />} />
           </Routes>
         </div>
       </BrowserRouter>

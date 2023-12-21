@@ -86,7 +86,7 @@ export default function TicTacToe () {
         );
       })} <br />
       {winner && <div style={{fontSize: 25, color: '#61dafb'}}>The winner is: {winner}</div> } <br />
-      <button style={{width: 75}} onClick={() => resetGame()}>Reset</button>
+      <button style={{fontSize: 20}} onClick={() => resetGame()}>Reset</button>
     </div>
   )
  
