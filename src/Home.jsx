@@ -14,7 +14,7 @@ function Home ({ fetchCall }) {
     <div className='body-text'>
       <span className="blue-text" >Pick a game of your choice.</span> <br></br> <br />
       <span className='score-text'>Games won: {localStorage.getItem('games-won')}</span> <br /> <br />
-      <button onClick={resetCounter} style={{fontSize: 15}}>Reset Score</button>
+      <button className='reset-button' onClick={resetCounter} >Reset Score</button>
     </div>
   );
 }

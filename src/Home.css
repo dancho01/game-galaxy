@@ -69,3 +69,21 @@
 .winner {
   background-color: aquamarine;
 }
+
+.reset-button {
+  background: lightcoral;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #006C67;
+  transform: scale(1.1); 
+  transition-duration: 300ms;
+}

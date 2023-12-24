@@ -79,7 +79,7 @@ function Guess () {
         }
         )}
       </div> <br />
-      <button onClick={setNewString} style={{fontSize: 20}} >Reset</button>
+      <button onClick={setNewString} className='reset-button'>Reset</button>
     </div>
   );
 }
