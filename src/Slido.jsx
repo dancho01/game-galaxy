@@ -195,8 +195,8 @@ export default function Slido () {
     </div>
     <br></br>
     <div className='buttons'>
-      <button onClick={moveToSolvedState} disabled={solved} style={{fontSize: 25}} >Solve</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={randomiseSquares} disabled={!hasMoved} style={{fontSize: 25}}  >Reset</button>
+      <button onClick={moveToSolvedState} disabled={solved} className='solve-button' >Solve</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onClick={randomiseSquares} disabled={!hasMoved} className='reset-button'>Reset</button>
     </div>
   </>
 }
