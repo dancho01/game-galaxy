@@ -38,6 +38,10 @@
     transition-duration: 300ms;
 }
 
+.fact-button:disabled {
+    opacity: 0.5;
+}
+
 .cat-fact {
     font-weight: normal;
     font-size: 1.8rem;
