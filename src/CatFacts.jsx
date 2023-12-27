@@ -17,7 +17,7 @@ function CatFacts() {
 
   function handleClick() {
     if (!buttonClicked) setButtonClicked(true);
-    if (picNumber <= 4) {
+    if (picNumber <= 5) {
       setPicNumber(prev => prev + 1);
       setCatFact(catFacts[picNumber]);
     } else {
@@ -85,17 +85,21 @@ function CatFacts() {
         <button disabled={!attempted} className='fact-button' onClick={nextQuestion}>Next</button>
       </> : (quiz && questionNumber >= 4) ? <>
         <div className='img-container'>
-          <img src={catPics[picNumber+1]} alt="" />
+          <img src={catPics[picNumber]} alt="" />
         </div>
         <div className='cat-fact'>Score: {points} / 5</div>
         <button className='fact-button' onClick={tryAgain}>Try Again</button>
       </> :
         <>
+        {(picNumber <= 5 && picNumber > 0) ? <div style={{color:'lightcoral'}} className='cat-fact'>Fact {picNumber}</div> : 
+        picNumber === 0 ? <div style={{color:'lightcoral'}} className='cat-fact'>Cat Facts</div> : <>
+        <div style={{color:'lightcoral'}} className='cat-fact'>Time to start Quiz</div></>}
+
         <div className='img-container'>
           <img src={catPics[picNumber]} alt="" />
         </div>
         <button className='fact-button' onClick={handleClick}>
-        {buttonClicked ? 'Next Fact' : 'Press to get a cool cat fact!'}
+        {(buttonClicked && picNumber <= 5) ? 'Next Fact' : (buttonClicked && picNumber === 6) ? 'Start quiz' : 'Press to get a cool cat fact!'}
         </button>
         <h1 className='cat-fact'>{catFact}</h1> 
         </>
