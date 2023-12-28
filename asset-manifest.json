@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/game-galaxy/static/css/main.1389b20b.css",
+    "main.js": "/game-galaxy/static/js/main.da38ee47.js",
+    "static/media/obi.png": "/game-galaxy/static/media/obi.3d86921175711a4c4687.png",
+    "static/media/crying.png": "/game-galaxy/static/media/crying.bc73e13612a0fd5e0fcb.png",
+    "static/media/cat_slipper.png": "/game-galaxy/static/media/cat_slipper.91ef82657faa9a3ba77a.png",
+    "static/media/cat_clone.png": "/game-galaxy/static/media/cat_clone.8d10bbd288fa3492edb9.png",
+    "static/media/cupcat.png": "/game-galaxy/static/media/cupcat.a9c7517b75c02b3b05b9.png",
+    "static/media/chill.png": "/game-galaxy/static/media/chill.0b2bd66fa217cb8eae64.png",
+    "static/media/vietnam.png": "/game-galaxy/static/media/vietnam.6aee9c219b7ba79f059c.png",
+    "static/media/slep.png": "/game-galaxy/static/media/slep.081b44e6b2616c99c7db.png",
+    "static/media/cowboy.png": "/game-galaxy/static/media/cowboy.fc61c0eb564d65d769c5.png",
+    "static/media/sleepy.png": "/game-galaxy/static/media/sleepy.089bc1e71a60715b3b6f.png",
+    "static/media/wasted.png": "/game-galaxy/static/media/wasted.eb609e8dbdb48f56e8e8.png",
+    "static/media/trinity.png": "/game-galaxy/static/media/trinity.f30a2ffca5b79748d52e.png",
+    "static/media/watermelon3.png": "/game-galaxy/static/media/watermelon3.84ce0bba4c0ad957ac19.png",
+    "static/media/watermelon1.png": "/game-galaxy/static/media/watermelon1.0dc6cdf20f6e5ecc88f0.png",
+    "static/media/ptsd.png": "/game-galaxy/static/media/ptsd.951c4d8288e100abd269.png",
+    "static/media/watermelon2.png": "/game-galaxy/static/media/watermelon2.4cd4141b2826cc6328a9.png",
+    "static/media/cry.png": "/game-galaxy/static/media/cry.1aa64b32465dbd1c1f98.png",
+    "static/media/mecatnic.png": "/game-galaxy/static/media/mecatnic.84a6217aaca0f960183e.png",
+    "static/media/scream2.png": "/game-galaxy/static/media/scream2.62ce26cedc377b256cc2.png",
+    "static/media/scream1.png": "/game-galaxy/static/media/scream1.81ae2a1ea89ba832a4e2.png",
+    "static/media/7.png": "/game-galaxy/static/media/7.599fb0311883df9204c7.png",
+    "static/media/4.png": "/game-galaxy/static/media/4.e435c05d3dbe7fc32f6f.png",
+    "static/media/6.png": "/game-galaxy/static/media/6.019497734780103dbced.png",
+    "static/media/8.png": "/game-galaxy/static/media/8.a6b684fdec99acf2f37c.png",
+    "static/media/5.png": "/game-galaxy/static/media/5.428142a1ee7a17c0ae88.png",
+    "static/media/2.png": "/game-galaxy/static/media/2.ed7dca6a37913f238215.png",
+    "static/media/3.png": "/game-galaxy/static/media/3.aff7d8e59cc4d930db3c.png",
+    "static/media/1.png": "/game-galaxy/static/media/1.fc6bde86360fa4c237e3.png",
+    "index.html": "/game-galaxy/index.html",
+    "main.1389b20b.css.map": "/game-galaxy/static/css/main.1389b20b.css.map",
+    "main.da38ee47.js.map": "/game-galaxy/static/js/main.da38ee47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1389b20b.css",
+    "static/js/main.da38ee47.js"
+  ]
+}
