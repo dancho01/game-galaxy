@@ -111,6 +111,10 @@
   transition-duration: 300ms;
 }
 
+.solve-button:disabled {
+  opacity: 0.5;
+}
+
 .not-winner {
   background-color: rgb(201, 178, 237);
 }
