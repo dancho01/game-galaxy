@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/game-galaxy/static/css/main.1389b20b.css",
+    "main.css": "/game-galaxy/static/css/main.cb4b736b.css",
     "main.js": "/game-galaxy/static/js/main.da38ee47.js",
     "static/media/obi.png": "/game-galaxy/static/media/obi.3d86921175711a4c4687.png",
     "static/media/crying.png": "/game-galaxy/static/media/crying.bc73e13612a0fd5e0fcb.png",
@@ -31,11 +31,11 @@
     "static/media/3.png": "/game-galaxy/static/media/3.aff7d8e59cc4d930db3c.png",
     "static/media/1.png": "/game-galaxy/static/media/1.fc6bde86360fa4c237e3.png",
     "index.html": "/game-galaxy/index.html",
-    "main.1389b20b.css.map": "/game-galaxy/static/css/main.1389b20b.css.map",
+    "main.cb4b736b.css.map": "/game-galaxy/static/css/main.cb4b736b.css.map",
     "main.da38ee47.js.map": "/game-galaxy/static/js/main.da38ee47.js.map"
   },
   "entrypoints": [
-    "static/css/main.1389b20b.css",
+    "static/css/main.cb4b736b.css",
     "static/js/main.da38ee47.js"
   ]
 }
